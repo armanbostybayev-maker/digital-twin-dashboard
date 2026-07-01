@@ -1,0 +1,33 @@
+export const colors = {
+  background: '#0b1118',
+  ground: '#1d252c',
+  equipment: {
+    stockpile: '#7a7168',
+    heap: '#8a806f',
+    skid: '#b8c2cc',
+    pump: '#7f8b99',
+    manifold: '#5b6673',
+    pond: '#26384d',
+    'mixer-settler': '#b7bec7',
+    tank: '#aeb7c0',
+    cellhouse: '#9aa5b1',
+    tankfarm: '#aab4bf',
+    treatment: '#9aa8a2',
+    'cathode-yard': '#7e6c55',
+  },
+  streams: {
+    pls: '#1f7bff',
+    raffinate: '#39c86a',
+    'rich-electrolyte': '#ff3d45',
+    'spent-electrolyte': '#ff8c1a',
+    organic: '#9b4dff',
+    acid: '#ffd21f',
+    'process-water': '#47d9ff',
+    'waste-water': '#8b5a2b',
+  },
+  alarms: {
+    normal: '#38bdf8',
+    warning: '#facc15',
+    critical: '#ef4444',
+  },
+};
