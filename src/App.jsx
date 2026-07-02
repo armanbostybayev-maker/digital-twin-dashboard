@@ -73,28 +73,30 @@ export default function App() {
         <CameraController cameraTarget={cameraTarget} shotRequest={shotRequest} />
       </Canvas>
 
-      <EquipmentSearch
-        search={filters.search}
-        selectedEquipment={selectedEquipment}
-        onSearch={setSearch}
-        onSelect={selectEquipment}
-      />
+      <div className="ui-layer">
+        <EquipmentSearch
+          search={filters.search}
+          selectedEquipment={selectedEquipment}
+          onSearch={setSearch}
+          onSelect={selectEquipment}
+        />
 
-      <ControlPanel
-        running={running}
-        showSensors={filters.showSensors}
-        showLabels={filters.showLabels}
-        onToggleRun={toggleRunning}
-        onToggleSensors={toggleSensors}
-        onToggleLabels={toggleLabels}
-        onResetCamera={resetCamera}
-      />
+        <ControlPanel
+          running={running}
+          showSensors={filters.showSensors}
+          showLabels={filters.showLabels}
+          onToggleRun={toggleRunning}
+          onToggleSensors={toggleSensors}
+          onToggleLabels={toggleLabels}
+          onResetCamera={resetCamera}
+        />
 
-      <LegendPanel cameraTarget={cameraTarget} onSetCamera={setCameraTarget} onScreenshot={requestScreenshot} />
+        <LegendPanel cameraTarget={cameraTarget} onSetCamera={setCameraTarget} onScreenshot={requestScreenshot} />
 
-      <InfoCard selectedEquipment={selectedEquipment} selectedInstrument={selectedInstrument} telemetry={telemetry} />
+        <InfoCard selectedEquipment={selectedEquipment} selectedInstrument={selectedInstrument} telemetry={telemetry} />
 
-      <StatusPanel telemetry={telemetry} alarms={alarms} />
+        <StatusPanel telemetry={telemetry} alarms={alarms} />
+      </div>
     </main>
   );
 }
